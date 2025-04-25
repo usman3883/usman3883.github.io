@@ -1,0 +1,70 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+body {
+    color: rgb(54, 54, 54);
+}
+p {
+    font-size: large;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 5px;
+}
+header h1 {
+    display: inline-block;
+    grid-column: 1/ span 1;
+}
+header nav {
+    display: inline-block;
+    grid-column: 4 / span 2;
+}
+header nav ul li {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 4px;
+    margin: 2px;
+    border-radius: 1em;
+}
+header nav ul li:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#aboutmesection {
+    margin-top: 50px;
+    min-width: 400px;
+    width: 80%;
+}
+
+#projectsection img {
+    max-width: 50%;
+    transition: 0.5s;
+}
+#projectsection p:hover {
+    cursor: pointer;
+    color: grey;
+}
+#firstImage:hover, #secondImage:hover, #thirdImage:hover {
+    max-width: 80%;
+}
+
+#skillsContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#skillsContainer img {
+    width: 200px;
+}
